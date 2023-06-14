@@ -83,18 +83,19 @@ elif choice == 'Sử dụng mô hình để dự báo':
             # st.write(lines.columns)
             flag = True       
     if type=="Input":        
-        git = st.number_input('Insert giatri')
+        
+        STV = st.number_input('Insert STV')
         DT = st.number_input('Insert DT')
         TN = st.number_input('Insert TN')
         SPT = st.number_input('Insert SPT')
-        GTC = st.number_input('Insert GTC')
-        GD = st.number_input('Insert GD')
+        SNL = st.number_input('Insert SNL')
+       
         TCH = st.number_input('Insert TCH')
-        GT = st.number_input('Insert GT')
-        DV = st.number_input('Insert DV')
-        VPCT = st.number_input('Insert VPCT')
+        CPH = st.number_input('Insert CPH')
+        CV = st.number_input('Insert CV')
+        
         LS = st.number_input('Insert LS')
-        lines={'giatri':[git],'DT':[DT],'TN':[TN],'SPT':[SPT],'GTC':[GTC],'GD':[GD],'TCH':[TCH],'GT':[GT],'DV':[DV],'VPCT':[VPCT],'LS':[LS]}
+        lines={'STV':[STV],'DT':[DT],'TN':[TN],'SPT':[SPT],'SNL':[SNL],'TCH':[TCH],'CPH':[CPH],'CV':[CV],'LS':[LS]}
         lines=pd.DataFrame(lines)
         st.dataframe(lines)
         flag = True
@@ -103,6 +104,6 @@ elif choice == 'Sử dụng mô hình để dự báo':
         st.write("Content:")
         if len(lines)>0:
             st.code(lines)
-            X_1 = lines.drop(columns=['giatri'])   
+            X_1 = lines.drop(columns=['STV'])   
             y_pred_new = model.predict(X_1)       
             st.code("giá trị dự báo: " + str(y_pred_new))
