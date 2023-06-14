@@ -46,7 +46,7 @@ if choice == 'Mục tiêu của mô hình':
     st.write("""
     ###### Mô hình được xây dựng để dự báo giá trị vay tín chấp của nhân viên đỗ nghèo khỉ.
     """) 
-    st.image("LSM.png")
+    st.image("banner.jpg")
     st.image("LSM_1.png")
 
 elif choice == 'Xây dựng mô hình':
