@@ -9,8 +9,8 @@ import streamlit as st
 
 df = pd.read_csv("credit access.csv", encoding='latin-1')
 
-st.title("Hồi quy tuyến tính")
-st.write("## Dự báo giá trị vay vốn của nông hộ")
+st.title("AGRIBANK")
+st.write("## Dự báo giá trị vay tín chấp cá nhân")
 
 uploaded_file = st.file_uploader("Choose a file", type=['csv'])
 if uploaded_file is not None:
