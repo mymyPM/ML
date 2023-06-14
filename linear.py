@@ -42,12 +42,10 @@ menu = ["Mục tiêu của mô hình", "Xây dựng mô hình", "Sử dụng mô
 choice = st.sidebar.selectbox('Danh mục tính năng', menu)
 
 if choice == 'Mục tiêu của mô hình':    
-    st.subheader("Mục tiêu của mô hình")
+    st.subheader("AGRIBANK TÂN BÌNH")
     st.write("""
     ###### Mô hình được xây dựng để dự báo giá trị vay tín chấp của nhân viên đỗ nghèo khỉ.
-    """)  
-    st.write("""###### Mô hình sử dụng thuật toán LinearRegression""")
-    st.write("""###### Agribank Tân Bình""")
+    """) 
     st.image("LSM.png")
     st.image("LSM_1.png")
 
