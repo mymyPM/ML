@@ -57,7 +57,7 @@ elif choice == 'Xây dựng mô hình':
     
     st.write("##### 2. Trực quan hóa dữ liệu")
     u=st.text_input('Nhập biến muốn vẽ vào đây')
-    fig1 = sns.regplot(data=df, x=u, y='giatri')    
+    fig1 = sns.regplot(data=df, x=u, y='STV')    
     st.pyplot(fig1.figure)
 
     st.write("##### 3. Build model...")
