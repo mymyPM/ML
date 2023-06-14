@@ -17,7 +17,7 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file, encoding='latin-1')
     df.to_csv("data.csv", index = False)
 
-X = df.drop(columns=['STV'])
+X = df.drop(columns=['giatri'])
 y = df['STV']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state= 12)
